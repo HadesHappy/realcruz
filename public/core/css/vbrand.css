@@ -1,0 +1,22 @@
+#wpFrame {
+    overflow: hidden;
+    height: calc(100vh - 135px);
+    width: calc(100% + 30px);
+    border-radius: 3px;
+    box-shadow: 1px 1px 15px rgba(255,255,255,0.1);
+    background-color: #fff;
+    border: none;
+    margin-right: -30px;
+}
+.page-container {
+    padding-bottom: 0;
+}
+.topbar #wpFrame {
+    height: calc(100vh - 190px);
+}
+
+@media (max-width: 1199px) {
+    #wpFrame {
+        height: calc(100vh - 190px);
+    }
+}

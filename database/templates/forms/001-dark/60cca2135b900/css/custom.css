@@ -1,0 +1,98 @@
+body {
+    border-radius: 10px!important;
+    overflow: hidden!important;
+    background: #222;
+    color: #fff;
+}
+label.error {
+    color: #dc3545;
+    font-size: 14px;
+}
+.container {
+    max-width: 100%;
+    padding: 10px 30px;
+}
+[builder-element=CellElement] .container {
+    padding: 0;
+}
+@media (min-width: 769px) {
+    [data-hide-on="desktop"] {
+      display: none!important;
+    }
+}
+@media (max-width: 768px) {
+    [data-hide-on="mobile"] {
+      display: none!important;
+    }
+}
+@media (max-width: 767px) {
+    [builder-element=CellContainerElement] {
+        display: block!important;
+    }
+    [builder-element="CellElement"] {
+        width: 100%!important;
+        max-width: none!important;        
+    }
+    [builder-element="CellElement"]  [builder-element="BlockElement"] {
+        padding: 0px!important;
+    }
+}
+@media (min-width: 768px) {
+    [builder-element=PricingTableElement] .col-12 {
+        flex-basis: 0;
+        flex-grow: 1;
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        max-width: 100%;
+    }
+}
+@media (min-width: 576px) {
+    .container {
+        max-width: 100%;
+    }
+}
+body {
+    margin: auto;
+}
+.btn {
+    padding: 7px 30px;
+}
+.banner-container {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    width: 40%;
+    justify-content: center;    
+    background-position: center center;
+    background-size: auto 100%;
+}
+.main-container {
+    width: 60%;
+}
+.btn-primary {
+    background-color: #444;
+    border-color: #444;
+}
+.form-control {
+    border-width: 0 0 1px;
+    border-color: #888;
+    padding: 2px 0;
+    height: auto;
+    border-radius: 0;
+    background: transparent;
+    color: #fff;
+}
+.form-control:focus {
+    border-color: #666;
+    box-shadow: none;
+    outline: none;
+    background: transparent;
+    color: #fff;
+}
+.btn-primary {
+    background: #edb77d;
+    padding: 15px 43px;
+    font-weight: bold;
+}

@@ -1,0 +1,4 @@
+git checkout composer.json
+git checkout composer.lock
+php composer.phar update acelle/cashier
+php composer.phar install

@@ -1,0 +1,22 @@
+h1[id]:before, h2[id]:before, h3[id]:before, h4[id]:before, h5[id]:before, h6[id]:before {
+    margin-top: 0;
+    height: 0;
+}
+div h2:first-child {
+	margin-top:0;
+}
+
+h2 {
+	margin-top: 40px;
+	font-size: 24px;
+}
+
+h3 {
+	margin-top: 20px;
+	font-size: 20px;
+}
+
+h4 {
+	margin-top: 15px;
+	font-size: 16px;
+}

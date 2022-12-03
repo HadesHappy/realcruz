@@ -1,0 +1,67 @@
+label.error {
+    color: #dc3545;
+    font-size: 85%;
+}
+body {
+    border: solid 0px #aaa;
+    border-radius: 3px;
+}
+.container {
+    width: 100%;
+}
+@media (min-width: 768px) {
+    .container {
+        max-width: 100%;
+    }
+}
+@media (min-width: 576px) {
+    .container {
+        max-width: 100%;
+    }
+}
+h1 {
+    font-size: 50px;
+    font-weight: 800;
+}
+label.font-weight-bold {
+    font-weight: normal!important;
+}
+.form-control {
+    border-width: 0 0 1px 0;
+    border-radius: 0;
+    border-color: #ddd;
+}
+.input-group>.custom-select:not(:last-child), .input-group>.form-control:not(:last-child) {
+    background: transparent;
+}
+.picker__input {
+    cursor: default;
+    background: transparent;
+    border-width: 0 0 1px 0;
+    border-color: #ddd;
+}
+.bg {
+    position: absolute;
+    bottom: -55px;
+    right: -34px;
+}
+.btn {
+    text-decoration: none!important;
+    display: inline-block!important;
+    border: solid 1px transparent!important;
+    outline: 0!important;
+    font-family: inherit!important;
+    font-weight: bold!important;
+    border-radius: 4px!important;
+    transition: background-color 0.2s ease-out!important;
+    line-height: 1.5!important;
+    padding: 11px 23px!important;
+    word-wrap: normal!important;
+    overflow: hidden!important;
+    text-overflow: ellipsis!important;
+    white-space: nowrap!important;
+}
+.btn-primary {
+    color: rgba(255,255,255,1)!important;
+    background: rgba(67,122,220,1)!important;
+}

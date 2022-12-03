@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="http://acellemail.com/api/">
+        <link rel="shortcut icon" href="../img/favicon.ico">
+
+	<title>API Reference - Acelle Mail 3.0</title>
+
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/highlight.css">
+        <link href="../css/extra.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="../index.html">Acelle Mail 3.0</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="../index.html">Getting Started</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../saas/index.html">SAAS Guideline</a>
+                    </li>
+                
+                
+                
+                    <li class="active">
+                        <a href="./index.html">API Reference</a>
+                    </li>
+                
+                
+                </ul>
+            
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                
+                    <li >
+                        <a rel="next" href="../saas/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li class="disabled">
+                        <a rel="prev" >
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#1-introduction">1. Introduction</a></li>
+        
+    
+        <li class="main "><a href="#2-api-reference">2. API Reference</a></li>
+        
+            <li><a href="#list">LIST</a></li>
+        
+            <li><a href="#campaign">CAMPAIGN</a></li>
+        
+            <li><a href="#subscriber">SUBSCRIBER</a></li>
+        
+    
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h2 id="1-introduction">1. Introduction</h2>
+<p>Acelle provides RESTful API which is based on simple <code>HTTP POST/GET</code> requests. We make it easy and quick to integrate Acelle sending capability with your website or application. Our API lets you create, manage, send, schedule campaigns as well as track your delivery statistics.</p>
+<h2 id="2-api-reference">2. API Reference</h2>
+<h3 id="list">LIST</h3>
+<h4 id="get-apiv1lists">GET /api/v1/lists</h4>
+<p>Get all mail lists' information</p>
+<pre><code class="sh">curl -X GET -H &quot;accept:application/json&quot; -G \
+http://test.acellemail.com:8888/api/v1/lists? \
+-d api_token=ME45Scg0tKaDplHgvR7Pcv20o9RsNna9dxx39lsayRpKkCZkP9QAgqT10yL7
+</code></pre>
+
+<h4 id="get-apiv1listsuid">GET /api/v1/lists/{uid}</h4>
+<p>Retrieve a particular list's information</p>
+<pre><code class="sh">curl -X GET -H &quot;accept:application/json&quot; -G \
+http://test.acellemail.com:8888/api/v1/lists/{uid}? \
+-d api_token=ME45Scg0tKaDplHgvR7Pcv20o9RsNna9dxx39lsayRpKkCZkP9QAgqT10yL7
+</code></pre>
+
+<h3 id="campaign">CAMPAIGN</h3>
+<h4 id="get-apiv1campaigns">GET /api/v1/campaigns</h4>
+<p>Get all campaigns' information</p>
+<pre><code class="sh">curl -X GET -H &quot;accept:application/json&quot; -G \
+http://test.acellemail.com:8888/api/v1/campaigns? \
+-d api_token=ME45Scg0tKaDplHgvR7Pcv20o9RsNna9dxx39lsayRpKkCZkP9QAgqT10yL7
+</code></pre>
+
+<h4 id="get-apiv1campaignsuid">GET /api/v1/campaigns/{uid}</h4>
+<p>Retrieve a particular campaign's information</p>
+<pre><code class="sh">curl -X GET -H &quot;accept:application/json&quot; -G \
+http://test.acellemail.com:8888/api/v1/campaigns/{uid}? \
+-d api_token=ME45Scg0tKaDplHgvR7Pcv20o9RsNna9dxx39lsayRpKkCZkP9QAgqT10yL7
+</code></pre>
+
+<h3 id="subscriber">SUBSCRIBER</h3>
+<h4 id="get-apiv1listslist_uidsubscribers">GET /api/v1/lists/{list_uid}/subscribers</h4>
+<p>Get all subscribers of a mail list</p>
+<p>Parameters:</p>
+<ul>
+<li><code>list_uid</code> Mail list's UID</li>
+</ul>
+<pre><code class="sh">curl -X GET -H &quot;accept:application/json&quot; -G \
+http://test.acellemail.com:8888/api/v1/lists/{list_uid}/subscribers? \
+-d api_token=ME45Scg0tKaDplHgvR7Pcv20o9RsNna9dxx39lsayRpKkCZkP9QAgqT10yL7
+</code></pre>
+
+<h4 id="get-apiv1listslist_uidsubscribersuid">GET /api/v1/lists/{list_uid}/subscribers/{uid}</h4>
+<p>Retrive a particulr subscriber of a mail list</p>
+<p>Parameters:</p>
+<ul>
+<li><code>list_uid</code> Mail list's UID</li>
+<li><code>uid</code> Subscriber's UID</li>
+</ul>
+<pre><code class="sh">curl -X GET -H &quot;accept:application/json&quot; -G \
+http://test.acellemail.com:8888/api/v1/lists/{list_uid}/subscribers/{uid}? \
+-d api_token=ME45Scg0tKaDplHgvR7Pcv20o9RsNna9dxx39lsayRpKkCZkP9QAgqT10yL7
+</code></pre>
+
+<h4 id="patch-apiv1listslist_uidsubscribersuidsubscribe">PATCH /api/v1/lists/{list_uid}/subscribers/{uid}/subscribe</h4>
+<p>Subscribe a subscriber</p>
+<p>Parameters:</p>
+<ul>
+<li><code>list_uid</code> Mail list's UID</li>
+<li><code>uid</code> Subscriber's UID</li>
+</ul>
+<pre><code class="sh">curl -X PATCH -H &quot;accept:application/json&quot; -G \
+http://test.acellemail.com:8888/api/v1/lists/{list_uid}/subscribers/{uid}/subscribe? \
+-d api_token=ME45Scg0tKaDplHgvR7Pcv20o9RsNna9dxx39lsayRpKkCZkP9QAgqT10yL7
+</code></pre>
+
+<h4 id="patch-apiv1listslist_uidsubscribersuidunsubscribe">PATCH /api/v1/lists/{list_uid}/subscribers/{uid}/unsubscribe</h4>
+<p>Unsubscribe a subscriber</p>
+<p>Parameters:</p>
+<ul>
+<li><code>list_uid</code> Mail list's UID</li>
+<li><code>uid</code> Subscriber's UID</li>
+</ul>
+<pre><code class="sh">curl -X PATCH -H &quot;accept:application/json&quot; -G \
+http://test.acellemail.com:8888/api/v1/lists/{list_id}/subscribers/{uid}/unsubscribe? \
+-d api_token=ME45Scg0tKaDplHgvR7Pcv20o9RsNna9dxx39lsayRpKkCZkP9QAgqT10yL7
+</code></pre></div>
+            
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+
+        <script src="../js/jquery-1.10.2.min.js"></script>
+        <script src="../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../js/highlight.pack.js"></script>
+        <script>var base_url = '..';</script>
+        <script data-main="../mkdocs/js/search.js" src="../mkdocs/js/require.js"></script>
+        <script src="../js/base.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

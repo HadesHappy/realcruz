@@ -1,0 +1,43 @@
+html {
+    background: #403b3b!important;
+    box-shadow: none!important;
+}
+.banner-container {
+    position: relative;
+    cursor: pointer;
+}
+.banner-container::before {
+    opacity: 0;
+    content: '.';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.1);
+    text-indent: -10000000px;
+    pointer-events: none;
+    transition: all 0.1s ease-in-out;
+}
+.banner-container::after {
+    opacity: 0;
+    content: 'add_photo_alternate';
+    position: absolute;
+    top: calc(50% - 25px);
+    left: calc(50% - 25px);
+    background-color: rgba(255,255,255,0.5);
+    padding: 10px 15px;
+    height: 50px;
+    width: 50px;
+    font-family: 'Material Icons Outlined';
+    font-size: 20px;
+    border-radius: 3px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.01);
+    transition: all 0.1s ease-in-out;
+    pointer-events: none;
+}
+.banner-container:hover:before, .banner-container:hover:after {
+    opacity: 1;
+}
+.banner-container::after:hover {
+    color: red;
+    background-color: rgba(255,255,255,0.9)!important;
+}

@@ -1,0 +1,4 @@
+cp composer.json.local composer.json
+rm composer.lock
+rm -rf vendor
+php composer.phar install

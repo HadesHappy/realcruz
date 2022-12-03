@@ -1,0 +1,20 @@
+{
+    "name": "{{ plugin }}",
+    "title": "Just to say hello world",
+    "version": "1.0.0",
+    "app_version": "4.0.0",
+    "description": "A sample plugin namely '{{ name }}' made by '{{ author }}' team",
+    "autoload": {
+        "psr-4": {
+            "{{ author_class }}\\{{ name_class }}\\": "src/"
+        }
+    },
+    "extra": {
+        "setting-route": "\\{{ author_class }}\\{{ name_class }}\\Controllers\\DashboardController@index",
+        "laravel": {
+            "providers": [
+                "{{ author_class }}\\{{ name_class }}\\ServiceProvider"
+            ]
+        }
+    }
+}

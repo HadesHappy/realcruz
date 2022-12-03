@@ -1,0 +1,7 @@
+.self-builder-selected {
+  border: dotted 1px #aaa !important;
+}
+
+table.mce-item-table, .mce-item-table td, .mce-item-table th, .mce-item-table caption {
+  border: none !important;
+}

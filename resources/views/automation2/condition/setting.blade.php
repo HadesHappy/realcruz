@@ -1,0 +1,1 @@
+@include('automation2.condition._' . request()->type)

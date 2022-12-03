@@ -1,0 +1,31 @@
+[builder-element=CellElement] .container {
+    padding: 0;
+}
+@media (min-width: 769px) {
+    [data-hide-on="desktop"] {
+      display: none!important;
+    }
+}
+@media (max-width: 768px) {
+    [data-hide-on="mobile"] {
+      display: none!important;
+    }
+}
+@media (max-width: 767px) {
+    [builder-element=CellContainerElement] {
+        display: block!important;
+    }
+    [builder-element="CellElement"] {
+        width: 100%!important;
+        max-width: none!important;        
+    }
+    [builder-element="CellElement"]  [builder-element="BlockElement"] {
+        padding: 0px!important;
+    }
+}
+@media (min-width: 768px) {
+    [builder-element=PricingTableElement] .col-12 {
+        flex-basis: 0;
+        flex-grow: 1;
+    }
+}

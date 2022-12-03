@@ -1,0 +1,94 @@
+.logo-img {
+    max-width: 130px;
+    margin-right: 15px;
+}
+.product-list-widget {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+}
+.product-list-widget.single img {
+    padding: 3px;
+    width: 58px;
+    height: 81px;
+}
+.product-list-widget img {
+    padding: 3px;
+    width: 65px;
+    height: 81px;
+}
+.woo-panel__body {
+    background-color: #fff8fe!important;
+}
+.btn-widget-preview, .btn-widget-unpreview {
+    padding: 3px 10px;
+    height: 28px;
+}
+.btn-widget-preview span, .btn-widget-unpreview span {
+    font-size: 20px;
+}
+.rss-config-line a {
+    color: #666;
+}
+.rss-config-line a:hover {
+    color: #333;
+}
+.fw-600 {
+    font-weight: 600;
+}
+.rss-config-line.item-selected {
+    background: #fff;
+    box-shadow: 1px 1px 20px rgb(0 0 0 / 10%);
+}
+.switchery[type="checkbox"], .styled[type="checkbox"], .styled[type="radio"] {
+    width: 19px;
+    height: 19px;
+    display: inline-block;
+    align-items: center;
+    cursor: pointer;
+    /* transform: scale(1.9) translateY(-90px); */
+    display: none;
+}
+.switchery[type="checkbox"]:disabled, .styled[type="checkbox"]:disabled, .styled[type="radio"]:disabled {
+    opacity: 0.6;
+    filter: grayscale(100%);
+    pointer-events: none;
+}
+.switchery[type="checkbox"] ~ .check-symbol:before, .styled[type="checkbox"] ~ .check-symbol:before, .styled[type="radio"] ~ .check-symbol:before {
+    position: relative;
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    background-color: #eee;
+    border: 1px solid #aaa;
+    content: "done";
+    border-radius: 3px;
+    background: #FFF;
+    font-family: 'Material Icons Outlined';
+    font-size: 15px;
+    line-height: 17px;
+    text-align: center;
+    cursor: pointer;
+    text-indent: -90000px;
+    top: 0;
+    /* transform: scale(1.9) translateY(90px); */
+    /* transform: translateY(19997px); */
+}
+.switchery[type="checkbox"] ~ .check-symbol:hover:before, .styled[type="checkbox"] ~ .check-symbol:hover:before, .styled[type="radio"] ~ .check-symbol:hover:before {
+    background-color: #eff3f5;
+}
+.switchery[type="checkbox"]:checked ~ .check-symbol:before, .styled[type="checkbox"]:checked ~ .check-symbol:before, .styled[type="radio"]:checked ~ .check-symbol:before {
+    content: "done";
+    background: #009688;
+    border-color: #009688;
+    color: #fff;
+    text-indent: 0;
+}
+.switchery[type="checkbox"].half_checked ~ .check-symbol:before, .styled[type="checkbox"].half_checked ~ .check-symbol:before {
+    content: "remove";
+    background: #009688;
+    border-color: #009688;
+    color: #fff;
+    text-indent: 0;
+}

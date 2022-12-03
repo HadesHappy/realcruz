@@ -1,0 +1,9 @@
+.big {
+  font-weight:600;
+}
+.blue {
+  color:blue;
+}
+div.main > a {
+  color:green;
+}

@@ -1,0 +1,1 @@
+<input type="hidden" name="options[type]" value="list-subscription" />

@@ -1,0 +1,28 @@
+body {
+    font-size: 15px;
+    line-height: 1.8;
+    font-family: system-ui, "Segoe UI", sans-serif;
+        system-ui,Segoe UI,sans-serif	
+        Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    line-height:1.4
+}
+a {
+    color: #136bf5;
+    text-decoration: none;
+}
+footer {
+    font-size: 16px;
+}
+@media (min-width: 768px) {
+    .container {
+        max-width: 550px;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        max-width: 550px;
+    }
+}
+

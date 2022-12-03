@@ -1,0 +1,10 @@
+#!/bin/bash
+DB_HOST=$(grep '^DB_HOST=' .env | cut -d '=' -f2)
+DB_USERNAME=$(grep '^DB_USERNAME=' .env | cut -d '=' -f2)
+DB_DATABASE=$(grep '^DB_DATABASE=' .env | cut -d '=' -f2)
+DB_PASSWORD=$(grep '^DB_PASSWORD=' .env | cut -d '=' -f2)
+DB_PORT=$(grep '^DB_PORT=' .env | cut -d '=' -f2)
+DB_TABLES_PREFIX=$(grep '^DB_TABLES_PREFIX=' .env | cut -d '=' -f2)
+
+echo "Connection: mysql $DB_DATABASE -u$DB_USERNAME -h$DB_HOST -p'$DB_PASSWORD' -P$DB_PORT"
+mysql -u"$DB_USERNAME" -h"$DB_HOST" -P$DB_PORT $DB_DATABASE -p"$DB_PASSWORD"

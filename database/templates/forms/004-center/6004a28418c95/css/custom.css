@@ -1,0 +1,125 @@
+body {
+    border-radius: 10px!important;
+    overflow: hidden!important;
+}
+label.error {
+    color: #dc3545;
+    font-size: 14px;
+}
+.container {
+    max-width: 100%;
+    padding: 10px 30px;
+}
+[builder-element=CellElement] .container {
+    padding: 0;
+}
+@media (min-width: 769px) {
+    [data-hide-on="desktop"] {
+      display: none!important;
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        max-width: 100%;
+    }
+}
+@media (min-width: 576px) {
+    .container {
+        max-width: 100%;
+    }
+}
+body {
+    margin: auto;
+    color: #fff;
+}
+.btn {
+    padding: 7px 30px;
+}
+.btn-primary {
+    background-color: #444;
+    border-color: #444;
+}
+
+label.error {
+    color: #dc3545;
+    font-size: 85%;
+}
+body {
+    border: solid 0px #aaa;
+}
+h1 {
+    font-size: 50px;
+    font-weight: 800;
+}
+label.font-weight-bold {
+    font-size: 20px;
+}
+.form-control {
+    border-width: 0 0 1px 0;
+    border-radius: 50px;
+    border-color: #ddd;
+}
+.input-group>.custom-select:not(:last-child), .input-group>.form-control:not(:last-child) {
+    background: transparent;
+}
+.picker__input {
+    cursor: default;
+    background: transparent;
+    border-width: 0 0 0 0;
+    border-color: #ddd;
+}
+.ctainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: #fff;
+    position: relative;
+    z-index: 100;
+}
+.form-middle {
+    width: 340px;
+}
+.full-background::before {
+    content: '.';
+    text-indent: -90000px;
+    width: 100%;
+    height: 100vh;
+    background: -webkit-linear-gradient(bottom, #005bea, #00c6fb);
+    display: block;
+    position: fixed;
+    opacity: 0.8;
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+.full-background {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+}
+.full-background img {
+    height: 100%;
+    width: auto;
+}
+.input-group {
+    background: #fff;
+    border-radius: 50px;
+}
+.btn {
+    width: 100%;
+    border-radius: 50px;
+    margin-bottom: 10px;
+    height: 50px;
+    font-size: 20px;
+}
+.btn-primary {
+    background: #444;
+    border-color: #444;
+}
+.avatar {
+    border-radius: 100%;
+    border: solid 3px rgba(255,255,255,0.5);
+    width: 130px;
+}

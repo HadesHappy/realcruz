@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="http://acellemail.com/saas/">
+        <link rel="shortcut icon" href="../img/favicon.ico">
+
+	<title>SAAS Guideline - Acelle Mail 3.0</title>
+
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/highlight.css">
+        <link href="../css/extra.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="../index.html">Acelle Mail 3.0</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="../index.html">Getting Started</a>
+                    </li>
+                
+                
+                
+                    <li class="active">
+                        <a href="./index.html">SAAS Guideline</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../api/index.html">API Reference</a>
+                    </li>
+                
+                
+                </ul>
+            
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                
+                    <li >
+                        <a rel="next" href="..">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../api/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#1-overview">1. Overview</a></li>
+        
+    
+        <li class="main "><a href="#2-administration">2. Administration</a></li>
+        
+            <li><a href="#21-setup-payment-methods">2.1. Setup payment methods</a></li>
+        
+            <li><a href="#22-create-service-plans">2.2. Create service plans</a></li>
+        
+            <li><a href="#23-manage-subscriptions">2.3. Manage subscriptions</a></li>
+        
+            <li><a href="#24-setup-sending-servers">2.4. Setup sending servers</a></li>
+        
+    
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h2 id="1-overview">1. Overview</h2>
+<p>Acelle Mail also comes with SaaS (Software As A Service) features that enable you to manage and sell your email service to your users. In general, a common workflow is:</p>
+<ul>
+<li>Admin setups <strong>payment methods</strong> to accept payment</li>
+<li>Admin creates <strong>service plans</strong></li>
+<li>User is allowed to <strong>sign up</strong> for an account, then <strong>subscribe to a plan</strong></li>
+<li>User can <strong>pay</strong> for the subscription</li>
+<li>After the payment is made, user can start using the services provided by Acelle Mail</li>
+</ul>
+<h2 id="2-administration">2. Administration</h2>
+<h3 id="21-setup-payment-methods">2.1. Setup payment methods</h3>
+<p>Go to admin's <em><strong>Plan &gt; Payment Methods</strong></em> to setup the preferred payment method. As of version 3.0.0, Acelle Mail supports the followings:</p>
+<ul>
+<li>Direct payment</li>
+<li>PayPal (through Braintree)</li>
+<li>Credit cards (through Braintree)</li>
+</ul>
+<p><strong>Braintree</strong> is a payment platform that allows you to accept payment by PayPal or credit cards. If you do not have a Braintree account, sign up for one at <a href="https://www.braintreepayments.com">https://www.braintreepayments.com</a></p>
+<p>Choose the payment methods you prefer and enter the Braintree credentials, then enable it. Once successfully configured, users who buy the service plan will be able to pay you through the payment method.</p>
+<h3 id="22-create-service-plans">2.2. Create service plans</h3>
+<p>Acelle Mail allows you to create/edit a service plan which will be available for your customers to subscribe to. Service plans represent a particular business offer. It defines the allocation of your resources, such as sending credits / mail lists / automations / subscribers / campaigns... and other features are offered to your customers.</p>
+<p>You can go to admin's <em><strong>Plan &gt; Plans</strong></em> to see the existing plans. You can create a new plan or edit an existing one.</p>
+<p><strong>Note</strong> b
+* By default, when you setup the application, a default plan named <strong>Default</strong> shall be created for you</p>
+<h3 id="23-manage-subscriptions">2.3. Manage subscriptions</h3>
+<p>This feature allows you to see the details of your customers' subscription. You can approve a payment, enable or disable a subscription.
+Let's look at a common scenario: </p>
+<ul>
+<li>User signs up for an account by clicking on the Sign Up link in the Login page.</li>
+<li>Then fill in the registration form and submit it.</li>
+<li>A confirmation email will be sent to the registered email address.</li>
+<li>User need to click on the confirmation link to activate the new account.</li>
+<li>After that, user can login to the system.</li>
+<li>Then user needs to subscribe to a plan, make the payment for the subscription. After that user can start using the system.</li>
+</ul>
+<p>As an administrator, you can go to admin's <strong><em><em>Customer &gt; Subscription</em></em></strong> to see all these subscriptions.
+<img alt="Subscription" src="https://s3.amazonaws.com/acellemail/subscription.png" title="Subscription" /></p>
+<p>Possible states of a subscription includes:</p>
+<ul>
+<li><code>inactive</code> when user first subscribes to a plan, and does not pay for it yet, the subscription is in <code>inactive</code> status, user cannot use the system yet.</li>
+<li><code>active</code> the subscription will become <code>active</code> if the payment is successfully made (through PayPal or Credit Card). If the payment method is <em>Direct</em> (which actually takes place outside of the system), then the administrator needs to confirm the payment and activate the subscription manually.</li>
+<li><code>disabled</code> the subscription is manually disabled by the administrator.</li>
+</ul>
+<p>Life cycle of a subscription includes:</p>
+<ul>
+<li><code>current</code> current subscription.</li>
+<li><code>pending</code> the next subscription which will start in the future.</li>
+<li><code>expired</code> subscription is already expired </li>
+</ul>
+<h3 id="24-setup-sending-servers">2.4. Setup sending servers</h3>
+<p>Campaign emails are actually delivered by a sending server which is an SMTP server or a 3rd service like Amazon SES or SendGrid. So, we need to setup the sending servers for the system customers. There are two types of customer in Acelle Mail:</p>
+<ul>
+<li>
+<p>Customers who are allowed to add their own sending servers (you can set this in the Sending Server tab while creating/editing a service plan). These users can then manage the sending server configuration/quota/limit on their own.</p>
+</li>
+<li>
+<p>Customers who are NOT allowed to add their own sending servers. These users do not need to know anything about sending server concept or how emails are actually delivered. They can just work with list/campaign/automation and their emails shall be sent using the sending servers added/managed by the administrator. In other words, the delivery resources must be provided by the administrator.</p>
+</li>
+</ul>
+<p><strong>Note</strong> when it comes to actually send an email. If there are more than one sending server available, then one will be selected using fitness proportionate selection. You can configure how likely a sending server is selected by setting its <code>fitness</code> value when assigning sending servers to a service plan or subscription. The higher the fitness value of a sending server is, the more likely it is to be selected.
+<img alt="Fitness" src="https://s3.amazonaws.com/acellemail/fitness-value.png" title="Fitness" /></p></div>
+            
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+
+        <script src="../js/jquery-1.10.2.min.js"></script>
+        <script src="../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../js/highlight.pack.js"></script>
+        <script>var base_url = '..';</script>
+        <script data-main="../mkdocs/js/search.js" src="../mkdocs/js/require.js"></script>
+        <script src="../js/base.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

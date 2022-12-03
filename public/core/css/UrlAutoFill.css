@@ -1,0 +1,35 @@
+.tox .tox-dialog__body-content .urlfill-dropdown {
+    position: absolute;
+    background: #fff;
+    width: 100%;
+    padding: 0;
+    box-shadow: 2px 2px 3px rgba(0,0,0,0.3);
+    border: solid 1px #bbb;
+}
+.tox .tox-dialog__body-content .urlfill-dropdown li {
+    list-style: none;
+    padding: 5px 12px;
+    border-bottom: solid 1px #bbb;
+    cursor: pointer;
+}
+.tox .tox-dialog__body-content .urlfill-dropdown li:last-child {
+    border-bottom: none;
+}
+.tox .tox-dialog__body-content .urlfill-dropdown li.current {
+    background: #efefef;
+}
+.tox .tox-dialog__body-content .urlfill-dropdown li:hover {
+    background: #eee;
+}
+.tox-dialog__popups, .tox-dialog__popups * {
+    display: none !important;
+}
+.tox .tox-dialog__body-content .urlautofill-input {
+    position: absolute;
+    left: 1px;
+    top: 1px;
+    height: 34px;
+    padding-left: 6px;
+    width: 98%;
+    background: #fff;
+}

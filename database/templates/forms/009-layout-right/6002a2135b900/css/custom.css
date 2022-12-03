@@ -1,0 +1,52 @@
+body {
+    border-radius: 10px!important;
+    overflow: hidden!important;
+}
+label.error {
+    color: #dc3545;
+    font-size: 14px;
+}
+.container {
+    max-width: 100%;
+    padding: 10px 30px;
+}
+[builder-element=CellElement] .container {
+    padding: 0;
+}
+@media (min-width: 769px) {
+    [data-hide-on="desktop"] {
+      display: none!important;
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        max-width: 100%;
+    }
+}
+@media (min-width: 576px) {
+    .container {
+        max-width: 100%;
+    }
+}
+body {
+    margin: auto;
+}
+.btn {
+    padding: 7px 30px;
+}
+.banner-container {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    width: 40%;
+    justify-content: center;    
+    background-position: center center;
+    background-size: auto 100%;
+}
+.main-container {
+    width: 60%;
+}
+.btn-primary {
+    background-color: #444;
+    border-color: #444;
+}

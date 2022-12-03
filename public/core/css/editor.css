@@ -1,0 +1,9 @@
+body {
+    padding: 15px;
+}
+.rtl, [dir=rtl] {
+    direction: rtl;
+    unicode-bidi: bidi-override !important;
+    direction: unset !important;
+    text-align:right;
+}

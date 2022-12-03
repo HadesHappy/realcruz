@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class Acelle\Http\Controllers\Api\SubscriberController</title>
+
+	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+				<li class="active">
+					<a href="namespace-Acelle.html">
+						Acelle<span></span>
+					</a>
+
+						<ul>
+				<li class="active">
+					<a href="namespace-Acelle.Http.html">
+						Http<span></span>
+					</a>
+
+						<ul>
+				<li class="active">
+					<a href="namespace-Acelle.Http.Controllers.html">
+						Controllers<span></span>
+					</a>
+
+						<ul>
+				<li class="active">
+					<a href="namespace-Acelle.Http.Controllers.Api.html">
+						Api					</a>
+
+						</li>
+							</ul></li></ul></li></ul></li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Acelle.Http.Controllers.Api.CampaignController.html">CampaignController</a></li>
+				<li><a href="class-Acelle.Http.Controllers.Api.MailListController.html">MailListController</a></li>
+				<li class="active"><a href="class-Acelle.Http.Controllers.Api.SubscriberController.html">SubscriberController</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Acelle.Http.Controllers.Api.html" title="Summary of Acelle\Http\Controllers\Api"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class SubscriberController</h1>
+
+
+	<div class="description">
+	<p>/api/v1/lists/{list_id}/subscribers - API controller for managing list's subscribers.</p>
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+Acelle\Http\Controllers\Controller
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by">
+<b><span>Acelle\Http\Controllers\Api\SubscriberController</span></b>			
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Acelle.html">Acelle</a>\<a href="namespace-Acelle.Http.html">Http</a>\<a href="namespace-Acelle.Http.Controllers.html">Controllers</a>\<a href="namespace-Acelle.Http.Controllers.Api.html">Api</a><br>
+		
+
+			<b>Located at</b> SubscriberController.php		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="index" id="_index">
+
+		<td class="attributes"><code>
+			 public 
+
+			Illuminate\Http\Response
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_index">#</a>
+		<code>index( <span>Illuminate\Http\Request <var>$request</var></span>, <span>string <var>$list_id</var></span> )</code>
+
+		<div class="description short">
+			<p>Display all list's subscribers.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Display all list's subscribers.</p>
+
+<p>GET /api/v1/lists/{list_id}/subscribers</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$request</var></dt>
+					<dd></dd>
+					<dt><var>$list_id</var></dt>
+					<dd>List's id</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					Illuminate\Http\Response
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="store" id="_store">
+
+		<td class="attributes"><code>
+			 public 
+
+			Illuminate\Http\Response
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_store">#</a>
+		<code>store( <span>Illuminate\Http\Request <var>$request</var></span>, <span>string <var>$list_id</var></span> )</code>
+
+		<div class="description short">
+			<p>Create subscriber for a mail list.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Create subscriber for a mail list.</p>
+
+<p>GET /api/v1/lists/{list_id}/subscribers/store</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$request</var></dt>
+					<dd>All subscriber information: EMAIL (required), FIRST_NAME (?), LAST_NAME (?),... (depending on the list fields configuration)</dd>
+					<dt><var>$list_id</var></dt>
+					<dd>List's id</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					Illuminate\Http\Response
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="show" id="_show">
+
+		<td class="attributes"><code>
+			 public 
+
+			Illuminate\Http\Response
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_show">#</a>
+		<code>show( <span>string <var>$list_id</var></span>, <span>string <var>$id</var></span> )</code>
+
+		<div class="description short">
+			<p>Display the specified subscriber information.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Display the specified subscriber information.</p>
+
+<p>GET /api/v1/lists/{list_id}/subscribers/{id}</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$list_id</var></dt>
+					<dd>List's id</dd>
+					<dt><var>$id</var></dt>
+					<dd>Subsciber's id</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					Illuminate\Http\Response
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="subscribe" id="_subscribe">
+
+		<td class="attributes"><code>
+			 public 
+
+			Illuminate\Http\Response
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_subscribe">#</a>
+		<code>subscribe( <span>string <var>$list_id</var></span>, <span>string <var>$id</var></span> )</code>
+
+		<div class="description short">
+			<p>Subscribe a subscriber.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Subscribe a subscriber.</p>
+
+<p>GET /api/v1/lists/{list_id}/subscribers/{id}/subscribe</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$list_id</var></dt>
+					<dd>List's id</dd>
+					<dt><var>$id</var></dt>
+					<dd>Subsciber's id</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					Illuminate\Http\Response
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="unsubscribe" id="_unsubscribe">
+
+		<td class="attributes"><code>
+			 public 
+
+			Illuminate\Http\Response
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_unsubscribe">#</a>
+		<code>unsubscribe( <span>string <var>$list_id</var></span>, <span>string <var>$id</var></span> )</code>
+
+		<div class="description short">
+			<p>Unsubscribe a subscriber.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Unsubscribe a subscriber.</p>
+
+<p>GET /api/v1/lists/{list_id}/subscribers/{id}/unsubscribe</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$list_id</var></dt>
+					<dd>List's id</dd>
+					<dt><var>$id</var></dt>
+					<dd>Subsciber's id</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					Illuminate\Http\Response
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="delete" id="_delete">
+
+		<td class="attributes"><code>
+			 public 
+
+			Illuminate\Http\Response
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_delete">#</a>
+		<code>delete( <span>string <var>$list_id</var></span>, <span>string <var>$id</var></span> )</code>
+
+		<div class="description short">
+			<p>Delete a subscriber.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Delete a subscriber.</p>
+
+<p>DELETE /api/v1/lists/{list_id}/subscribers/{id}/delete</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$list_id</var></dt>
+					<dd>List's id</dd>
+					<dt><var>$id</var></dt>
+					<dd>Subsciber's id</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					Illuminate\Http\Response
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>
